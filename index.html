@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos y Café</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        /* CSS Personalizado */
+        body {
+            font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+            background-color: #fef8ec; /* Fondo cálido */
+            color: #4a4a4a; /* Color de texto */
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+            background-color: #ffb6b9; /* Fondo rosado */
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+
+        h1 {
+            color: #6c4f3d; /* Color marrón café */
+        }
+
+        .btn-primary {
+            background-color: #6c4f3d;
+            border-color: #6c4f3d;
+        }
+
+        .btn-primary:hover {
+            background-color: #5a3f2e;
+            border-color: #4e3728;
+        }
+
+        .card {
+            border: none;
+            background-color: #fff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+        }
+
+        .carousel-inner img {
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #4a4a4a;
+        }
+
+        .card-text {
+            color: #6c6c6c;
+        }
+
+        .footer {
+            background-color: #ffb6b9;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .cat-text {
+            font-style: italic;
+            font-size: 1rem;
+            color: #6c4f3d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Café de Gatos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gatitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cafés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/download (1).jpeg" class="d-block w-100" alt="Gato 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/download (2).jpeg" class="d-block w-100" alt="Gato 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/download.jpeg" class="d-block w-100" alt="Gato 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="container my-5">
+        <!-- Título y Botón -->
+        <div class="text-center">
+            <h1 class="display-4">Un Café con Gatitos</h1>
+            <p class="lead">Disfruta del mejor café acompañado de nuestros adorables amigos felinos. Relájate, lee un libro y pasa un momento inolvidable.</p>
+            <a href="#" class="btn btn-primary btn-lg">Visítanos</a>
+        </div>
+
+        <!-- Tarjetas -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/cafegato1.jpg" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Ronroneador</h5>
+                        <p class="card-text">El mejor compañero para un café con leche.</p>
+                        <a href="#" class="btn btn-primary">Conócelo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/cafegato2.jpg" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Dormilón</h5>
+                        <p class="card-text">Siempre listo para acompañarte en un momento tranquilo.</p>
+                        <a href="#" class="btn btn-primary">Conócelo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/cafegato3.jpg" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Gato Aventurero</h5>
+                        <p class="card-text">El explorador oficial de nuestro café.</p>
+                        <a href="#" class="btn btn-primary">Conócelo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dos Columnas -->
+        <div class="row my-5">
+            <div class="col-md-6">
+                <img src="img/img 2 fuente de parcial.png" class="img-fluid" alt="Gatito y Taza">
+            </div>
+            <div class="col-md-6">
+                <h3>Suscríbete a nuestras noticias</h3>
+                <p>Los gatos son criaturas fascinantes que han acompañado al ser humano durante siglos, aportando no solo compañía, sino también un aire de misterio y elegancia. Conocidos por su carácter independiente y su espíritu juguetón, los gatos son animales que combinan perfectamente la gracia de un cazador con la ternura de un amigo fiel.
+
+                    Estos pequeños felinos domésticos poseen habilidades únicas, como una agilidad extraordinaria, visión nocturna perfecta y un oído agudo que les permite detectar el más mínimo ruido. Aunque suelen dormir hasta 16 horas al día, cuando están despiertos, son increíblemente activos y curiosos, explorando su entorno con gran entusiasmo.
+                    
+                    Además de ser mascotas encantadoras, los gatos tienen un impacto positivo en nuestra salud mental. Estudios han demostrado que acariciar a un gato puede reducir los niveles de estrés y ansiedad, promoviendo una sensación de calma y felicidad. Su ronroneo, ese sonido suave y relajante, no solo es una muestra de su satisfacción, sino que también tiene propiedades terapéuticas para los humanos.
+                    
+                    En muchas culturas, los gatos han sido venerados como símbolos de buena suerte, protección y sabiduría. Desde el Antiguo Egipto, donde se les adoraba como deidades, hasta nuestros días, los gatos han mantenido un lugar especial en nuestros corazones y hogares.
+                    
+                    Si alguna vez has tenido la fortuna de compartir tu vida con un gato, sabrás que cada uno tiene una personalidad única. Algunos son juguetones y enérgicos, mientras que otros prefieren pasar el día descansando en un rincón soleado. Pero todos tienen algo en común: saben cómo convertir cualquier momento en uno especial y lleno de amor.</p>
+            </div>
+        </div>
+
+        <!-- Imagen Final -->
+        <div class="text-center">
+            <img src="img/abajo xd.png" class="img-fluid" alt="Flask Login">
+            <p class="cat-text">"Un café sin un gato es como un día sin sol."</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Café de Gatos. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
